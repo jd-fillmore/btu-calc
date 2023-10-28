@@ -1,0 +1,14 @@
+@import "../../styles/breakpoints.scss";
+@import "../../styles/variables.scss";
+
+.difference {
+  background: $grey;
+  width: 190px;
+  padding: 30px;
+  h4 {
+    margin-bottom: 0px !important;
+  }
+  @include bp-tablet-sm {
+    margin-bottom: 20px;
+  }
+}

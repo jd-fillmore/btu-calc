@@ -1,0 +1,81 @@
+@import "./breakpoints.scss";
+@import "./variables.scss";
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  border-left: none !important;
+  padding-left: 0px !important;
+}
+
+h4 {
+  margin-bottom: 0px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.box {
+  padding: 120px 80px;
+  @include bp-tablet-sm {
+    padding: 30px;
+  }
+}
+
+.red {
+  background: $red;
+  h2,
+  h3,
+  h4,
+  span,
+  p,
+  label {
+    color: $white;
+    font-family: "Montserrat", sans-serif;
+  }
+  h2 {
+    margin-bottom: 20px;
+    @include bp-tablet-sm {
+      margin-bottom: 0px;
+    }
+  }
+  h3 {
+    font-size: 26px;
+  }
+  label {
+    @include bp-tablet-sm {
+      margin-top: 20px;
+    }
+  }
+}
+
+.yellow {
+  background: $yellow;
+  h2 {
+    margin-bottom: 20px;
+    @include bp-tablet-sm {
+      margin-bottom: 0px;
+    }
+  }
+  label {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 20px;
+  }
+}
+
+.grey {
+  background: $grey;
+}
+
+.form-control {
+  border-radius: 0;
+  padding: 30px 20px 30px 20px;
+  border: 3px solid $grey;
+}
