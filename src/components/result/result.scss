@@ -17,6 +17,7 @@
   }
   @include bp-tablet-sm {
     margin-top: 10px;
+    width: inherit;
   }
 }
 
